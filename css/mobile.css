@@ -1,0 +1,201 @@
+/*
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--veryLightGray);
+}
+
+/* */
+.card-main-container{
+    width: 300px;
+    height: 1350px;
+    display: grid;
+    grid-template-rows: repeat(5, 250px);
+    row-gap: 20px;
+}
+
+/* */
+.card-title-container{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.card-title-container #d1{
+    font-size: 20px;
+    line-height: 10px;
+}
+.card-title-container #t1{
+    font-weight: 200;
+    color: var(--veryDarkBlue);
+}
+.card-title-container #t2{
+    font-weight: 600;
+    color: var(--veryDarkBlue);
+}
+.card-title-container #d2{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--grayishBlue);
+    line-height: 10px;
+}
+
+    /* Contedor principal de la seccion supervisor */
+.card-supervisor-container{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border: 1px solid var(--veryLightGray);
+    border-top: 5px solid var(--cyan);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 6px 11px -6px var(--grayishBlue);
+}
+.card-supervisor-container h2{
+    color: var(--veryDarkBlue);
+}
+
+    /* */
+.card-supervisor-container p{
+    font-size: 13px;
+    color: var(--grayishBlue);
+    line-height: 10px;
+}
+
+    /* figura numero 1  card supervisor*/
+.card-supervisor-container #f1{
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/icon-supervisor.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: flex-end;
+    margin: 0;
+}
+
+/* Contedor principal de la seccion team builder */
+.card-tBuilder-container{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    border: 1px solid var(--veryLightGray);
+    border-top: 5px solid var(--red);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 6px 11px -6px var(--grayishBlue);
+}
+.card-tBuilder-container h2{
+    color: var(--veryDarkBlue);
+}
+.card-tBuilder-container p{
+    font-size: 13px;
+    color: var(--grayishBlue);
+    line-height: 10px;
+}
+
+.card-tBuilder-container #f2{
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/icon-team-builder.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: flex-end;
+    margin: 0;
+}
+
+/* */
+.card-karma-container{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    border: 1px solid var(--veryLightGray);
+    border-top: 5px solid var(--orange);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 6px 11px -6px var(--grayishBlue);
+}
+.card-karma-container h2{
+    color: var(--veryDarkBlue);
+}
+.card-karma-container p{
+    font-size: 13px;
+    color: var(--grayishBlue);
+    line-height: 10px;
+}
+
+.card-karma-container #f3{
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/icon-karma.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: flex-end;
+    margin: 0;
+}
+
+/* */
+.card-calculator-container{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    border: 1px solid var(--veryLightGray);
+    border-top: 5px solid var(--blue);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 6px 11px -6px var(--grayishBlue);
+}
+.card-calculator-container h2{
+    color: var(--veryDarkBlue);
+}
+.card-calculator-container p{
+    font-size: 13px;
+    color: var(--grayishBlue);
+    line-height: 10px;
+}
+
+.card-calculator-container #f4{
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/icon-calculator.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin: 0;
+}
